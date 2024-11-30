@@ -1,7 +1,7 @@
 # ShellCodeEx
 
 [![](https://img.shields.io/badge/platform-Windows-informational)](https://github.com/Zalexanninev15/ShellCodeEx)
-[![](https://img.shields.io/badge/written_on-C-000000.svg?logo=rust)](https://github.com/Zalexanninev15/ShellCodeEx)
+[![](https://img.shields.io/badge/written_on-C-000000.svg?logo=c)](https://github.com/Zalexanninev15/ShellCodeEx)
 [![](https://img.shields.io/badge/written_on-.NET_9-651DE5.svg?logo=dotnet)](https://dotnet.microsoft.com/download/dotnet/6.0)
 [![](https://img.shields.io/badge/written_on-C%23-%23239120.svg?logo=sharp&logoColor=white)](https://github.com/Zalexanninev15/SharkRemoteV4)
 [![](https://img.shields.io/github/v/release/Zalexanninev15/ShellCodeEx)](https://github.com/Zalexanninev15/ShellCodeEx/releases/latest)
