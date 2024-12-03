@@ -18,7 +18,13 @@ My personal experiment on executing shellcode on Windows. For educational purpos
 
 ## Kali Linux commands for generate shellcode
 
-### Test shellcode (need PowerShell 7 on Windows):
+Install Metasploit Framework:
+
+```bash
+sudo apt install metasploit-framework -y
+```
+
+### Test shellcode (need PowerShell 7 on Windows)
 
 ```bash
 msfconsole -x "use payload/windows/x64/exec; set CMD 'pwsh -CommandWithArgs \"ls\" && pause'; generate -f ps1"
